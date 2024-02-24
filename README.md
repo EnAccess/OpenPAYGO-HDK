@@ -136,7 +136,7 @@ When entering a token (or receiving it through OpenPAYGO Metrics, Pass, etc.):
 
 ## OpenPAYGO Metrics Data Format
 
-For this example, the following basic OpenPAYGO Metrics data format is used. You can check the (OpenPAYGO Metrics documentation)[https://github.com/openpaygo/metrics/blob/main/Specifications.md] to create a data format that matches your monitoring need. It can support daily averages for several days. 
+For this example, the following basic OpenPAYGO Metrics data format is used. You can check the [OpenPAYGO Metrics documentation](https://github.com/openpaygo/metrics/blob/main/Specifications.md) to create a data format that matches your monitoring need. It can support daily averages for several days. 
 
 **Data Format:**
 ```json
