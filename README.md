@@ -6,6 +6,7 @@ This repository is for the OpenPAYGO HDK (Hardware Development Kit), a ready-to-
 ## Table of Content
 
   - [Hardware](#hardware)
+  - [Firmware](#firmware)
   - [Integration](#integration)
   - [Getting Started](#getting-started)
     - [Compile and upload](#compile-and-upload)
@@ -16,6 +17,7 @@ This repository is for the OpenPAYGO HDK (Hardware Development Kit), a ready-to-
     - [Token Command](#token-command)
     - [Status command](#status-command)
   - [Understanding LED signals](#understanding-led-signals)
+  - [OpenPAYGO Metrics Data Format](#openpaygo-metrics-data-format)
 
 
 
