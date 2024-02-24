@@ -34,6 +34,10 @@ The HDK is based on the ESP32, this decision was taken because it offers the fol
 
 To use OpenPAYGO Pass, you will need any PN53x series NFC modules, wired via I2C. 
 
+The exact hardware module of the OpenPAYGO HDK is the [ESP32-WROOM-32E](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf). The code provided here will work with any of the variants, but the cheapest one already leaves a lot of available space and should be enough for most projects. 
+
+Many cheap Arduino-compatible prototypes board are available and directly compatible with the code on this repository, such as [this one](https://www.amazon.es/AZDelivery-ESP-WROOM-32-Bluetooth-Desarrollo-Incluido/dp/B0821JM6J7). For prototyping with the NFC module for OpenPAYGO Pass, you can simply use any PN532-based kits (such as [this one](https://www.amazon.es/HiLetgo-Communication-Arduino-Raspberry-Android/dp/B07ZWV1XZ1/)) and simply connect the SDA and SCL pins to the pins 21 and 22 of the ESP32 Arduino board. 
+
 
 ## Firmware
 
