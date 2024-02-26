@@ -9,7 +9,7 @@ This repository is for the OpenPAYGO HDK (Hardware Development Kit), a ready-to-
   >
   <a href="https://github.com/EnAccess/OpenPAYGO-HDK/blob/main/LICENSE" target="_blank">
     <img
-      alt="License"
+      alt="MIT License"
       src="https://img.shields.io/github/license/EnAccess/OpenPAYGO-HDK"
     >
   </a>
