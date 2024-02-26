@@ -5,8 +5,8 @@
 #include <Arduino.h>
 #include "hal.h"
 extern "C" {
-  #include "openpaygo_token/opaygo_decoder.h"
-  #include "openpaygo_token/siphash.h"
+#include "openpaygo_token/opaygo_decoder.h"
+#include "openpaygo_token/siphash.h"
 }
 
 // Defines
@@ -15,7 +15,6 @@ extern "C" {
 #define TOKEN_PAYG_DISABLED -3
 
 // Hardware defines
-
 
 // Functions
 void setupToken();
@@ -31,6 +30,5 @@ bool isActive(void);
 bool tokenEntryAllowed(void);
 
 // Variables
-
 
 #endif

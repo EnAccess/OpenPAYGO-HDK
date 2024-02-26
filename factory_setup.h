@@ -13,8 +13,6 @@
 void factorySetupLoop();
 bool isFactorySetupDone();
 
-
 // Variables
-
 
 #endif
