@@ -15,5 +15,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run clang-format lint
-        working-directory: firmware
         run: find include/ src/ \( -name '*.[ch]pp' -o -name '*.h' \) | xargs clang-format --verbose --style=file -n --Werror
