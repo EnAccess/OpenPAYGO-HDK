@@ -1,7 +1,15 @@
-# OpenPAYGO HDK
-
-This repository is for the OpenPAYGO HDK (Hardware Development Kit), a ready-to-use implementation of OpenPAYGO technologies (currently Token and Pass) in a dev kit that is both convenient for prototyping and easy to turn into optimized production products.
-
+<p align="center">
+  <a href="https://github.com/EnAccess/OpenPAYGO-Token">
+    <img
+      src="https://enaccess.org/wp-content/uploads/2024/02/OpenPAYGO_Suite_IsoLogo.png"
+      alt="OpenPAYGO Token"
+      width="320"
+    >
+  </a>
+</p>
+<p align="center">
+    <em>The OpenPAYGO is an open source token system to enable PAYGO functionality in new products.</em>
+</p>
 <p align="center">
   <img
     alt="Project Status"
@@ -14,6 +22,12 @@ This repository is for the OpenPAYGO HDK (Hardware Development Kit), a ready-to-
     >
   </a>
 </p>
+
+---
+
+# OpenPAYGO HDK
+
+This repository is for the OpenPAYGO HDK (Hardware Development Kit), a ready-to-use implementation of OpenPAYGO technologies (currently Token and Pass) in a dev kit that is both convenient for prototyping and easy to turn into optimized production products.
 
 ## Credits
 
