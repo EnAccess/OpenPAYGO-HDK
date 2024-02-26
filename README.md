@@ -15,7 +15,6 @@
 
 This repository is for the OpenPAYGO HDK (Hardware Development Kit), a ready-to-use implementation of OpenPAYGO technologies (currently Token and Pass) in a dev kit that is both convenient for prototyping and easy to turn into optimized production products.
 
-
 <p align="center">
   <img
     alt="Project Status"
@@ -33,7 +32,7 @@ This repository is for the OpenPAYGO HDK (Hardware Development Kit), a ready-to-
 
 # OpenPAYGO HDK
 
-This repository is for the OpenPAYGO HDK (Hardware Development Kit), a ready-to-use implementation of OpenPAYGO technologies (currently Token and Pass) in a dev kit that is both convenient for prototyping and easy to turn into optimized production products. 
+This repository is for the OpenPAYGO HDK (Hardware Development Kit), a ready-to-use implementation of OpenPAYGO technologies (currently Token and Pass) in a dev kit that is both convenient for prototyping and easy to turn into optimized production products.
 
 ## Credits
 
