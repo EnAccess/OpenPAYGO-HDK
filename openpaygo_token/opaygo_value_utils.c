@@ -1,8 +1,7 @@
 #include "opaygo_value_utils.h"
 
-
 int DecodeBase(int StartingCodeBase, int TokenBase) {
-    if((TokenBase - StartingCodeBase) < 0) {
+    if ((TokenBase - StartingCodeBase) < 0) {
         return TokenBase + 1000 - StartingCodeBase;
     } else {
         return TokenBase - StartingCodeBase;

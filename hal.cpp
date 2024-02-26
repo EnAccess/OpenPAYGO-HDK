@@ -1,8 +1,6 @@
 #include "hal.h"
 
-
 ESP32Time rtc(0);
-
 
 void setupPeripherals() {
     pinMode(LOAD_PIN, OUTPUT);
@@ -13,20 +11,17 @@ void setupPeripherals() {
     rtc.setTime();
 }
 
-
 void setupSerial() {
     Serial.begin(SERIAL_RATE);
 }
-
 
 uint32_t getTimeInSeconds() {
     return rtc.getEpoch();
 }
 
-
 void blinkLED(int numberOfBlinks, int LEDPin) {
-    int i;   
-    for (i = 0; i < numberOfBlinks; i++){
+    int i;
+    for (i = 0; i < numberOfBlinks; i++) {
         digitalWrite(LEDPin, HIGH);
         // Wait for 1 second
         delay(LED_BLINK_TIME);
@@ -50,29 +45,28 @@ void blinkBlueLED(int numberOfBlinks) {
 }
 
 void switchLoad(bool active) {
-    if(active) {
+    if (active) {
         digitalWrite(LOAD_PIN, HIGH);
     } else {
         digitalWrite(LOAD_PIN, LOW);
     }
 }
 
-
 // ----- Metrics collection functions ----- //
 
 // For this example it uses random data, change it for actual measurements
 uint8_t getNumberOfDaysOfMetrics() {
-    return random(1, 31); 
+    return random(1, 31);
 }
 
 float getPowerGenerated(uint8_t day) {
-    return random(1000, 6000)/100.0f;
+    return random(1000, 6000) / 100.0f;
 }
 
 float getHoursOfLighting(uint8_t day) {
-    return random(100, 800)/100.0f;
+    return random(100, 800) / 100.0f;
 }
 
 float getAverageBatteryVoltage(uint8_t day) {
-    return random(1200, 1440)/100.0f;
+    return random(1200, 1440) / 100.0f;
 }

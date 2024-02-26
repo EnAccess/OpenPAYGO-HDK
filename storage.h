@@ -35,9 +35,10 @@ extern uint32_t startingCode;
 extern unsigned char secretKey[16];
 extern uint16_t lastCount;
 extern uint16_t usedTokens;
-extern uint8_t paygDisabled; //uint8_t because we need to store a byte in EEPROM
+extern uint8_t paygDisabled;  // uint8_t because we need to store a byte in
+                              // EEPROM
 extern uint32_t activeUntil;
-extern uint32_t invalidTokenCount; // uint32_t can go up to 133 years
-extern uint32_t tokenEntryLockedUntil; // uint32_t can go up to 133 years
+extern uint32_t invalidTokenCount;      // uint32_t can go up to 133 years
+extern uint32_t tokenEntryLockedUntil;  // uint32_t can go up to 133 years
 
 #endif

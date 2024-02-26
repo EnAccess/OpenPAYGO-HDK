@@ -14,11 +14,11 @@
 #define SERIAL_RATE 115200
 // Token Settings
 #define TIME_DIVIDER 1
-//#define RESTRICTED_DIGIT_SET_MODE // Enable if you only have digits from 1-4
+// #define RESTRICTED_DIGIT_SET_MODE // Enable if you only have digits from 1-4
 #ifdef RESTRICTED_DIGIT_SET_MODE
-#define TOKEN_LENGTH 15
+#    define TOKEN_LENGTH 15
 #else
-#define TOKEN_LENGTH 9
+#    define TOKEN_LENGTH 9
 #endif
 
 // Hardware defines
@@ -29,11 +29,11 @@
 
 // Macros
 #ifdef DEBUG_MODE
-#define debugPrint(...) Serial.print(__VA_ARGS__)
-#define debugPrintln(...) Serial.println(__VA_ARGS__)
+#    define debugPrint(...) Serial.print(__VA_ARGS__)
+#    define debugPrintln(...) Serial.println(__VA_ARGS__)
 #else
-#define debugPrint(...)
-#define debugPrintln(...)
+#    define debugPrint(...)
+#    define debugPrintln(...)
 #endif
 
 // Functions
@@ -53,6 +53,5 @@ float getHoursOfLighting(uint8_t day);
 float getAverageBatteryVoltage(uint8_t day);
 
 // Variables
-
 
 #endif

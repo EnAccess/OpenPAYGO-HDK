@@ -2,11 +2,11 @@
 #define PASS_H
 
 // Imports
-#include <Arduino.h>
-#include <Wire.h>
-#include <SPI.h>
 #include <Adafruit_PN532.h>
+#include <Arduino.h>
 #include <ArduinoJson.h>
+#include <SPI.h>
+#include <Wire.h>
 #include "hal.h"
 #include "openpaygo_metrics.h"
 
@@ -17,7 +17,7 @@
 
 // Hardware defines
 #define PN532_SCL (22)
-#define PN532_SDA (21) 
+#define PN532_SDA (21)
 #define MAX_TAG_SIZE 768
 #define DELAY_BETWEEN_CARDS 2000
 
@@ -37,6 +37,5 @@ bool writeDataToCard();
 void printCardBuffer();
 
 // Variables
-
 
 #endif

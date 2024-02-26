@@ -1,19 +1,18 @@
 #include "factory_setup.h"
 
-
 bool isFactorySetupDone() {
     return setupComplete == SETUP_COMPLETE_MAGIC_NUMBER;
 }
-
 
 void handleReceivedSetupData() {
     if (Serial.read() == '#') {
         // Read the serial number until ';' is encountered and convert to int
         String input = Serial.readStringUntil(';');
-        if(input == "SETUP") {
+        if (input == "SETUP") {
             input = Serial.readStringUntil(';');
             sscanf(input.c_str(), "%d", &serialNumber);
-            // Read the starting code until ';' is encountered and convert to int
+            // Read the starting code until ';' is encountered and convert to
+            // int
             input = Serial.readStringUntil(';');
             sscanf(input.c_str(), "%d", &startingCode);
             // Read the next part (hexadecimal string)
@@ -36,9 +35,9 @@ void handleReceivedSetupData() {
     }
 }
 
-
 void factorySetupLoop() {
-    if (Serial.available() > 0) {  // send data only when you receive data; condition in setupComplete in case the eeprom was badly initialized
+    if (Serial.available() > 0) {  // send data only when you receive data; condition in
+                                   // setupComplete in case the eeprom was badly initialized
         handleReceivedSetupData();
     }
 
