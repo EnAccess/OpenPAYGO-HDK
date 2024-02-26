@@ -6,6 +6,7 @@ This repository is for the OpenPAYGO HDK (Hardware Development Kit), a ready-to-
 ## Table of Content
 
   - [Hardware](#hardware)
+  - [Firmware](#firmware)
   - [Integration](#integration)
   - [Getting Started](#getting-started)
     - [Compile and upload](#compile-and-upload)
@@ -16,6 +17,7 @@ This repository is for the OpenPAYGO HDK (Hardware Development Kit), a ready-to-
     - [Token Command](#token-command)
     - [Status command](#status-command)
   - [Understanding LED signals](#understanding-led-signals)
+  - [OpenPAYGO Metrics Data Format](#openpaygo-metrics-data-format)
 
 
 
@@ -31,6 +33,10 @@ The HDK is based on the ESP32, this decision was taken because it offers the fol
 - Has a lot of Flash storage and RAM, making it easy to add device features onto and allowing to store many days (even several months!) of metrics data pending to be sent
 
 To use OpenPAYGO Pass, you will need any PN53x series NFC modules, wired via I2C. 
+
+The exact hardware module of the OpenPAYGO HDK is the [ESP32-WROOM-32E](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf). The code provided here will work with any of the variants, but the cheapest one already leaves a lot of available space and should be enough for most projects. 
+
+Many cheap Arduino-compatible prototypes board are available and directly compatible with the code on this repository, such as [this one](https://www.amazon.es/AZDelivery-ESP-WROOM-32-Bluetooth-Desarrollo-Incluido/dp/B0821JM6J7). For prototyping with the NFC module for OpenPAYGO Pass, you can simply use any PN532-based kits (such as [this one](https://www.amazon.es/HiLetgo-Communication-Arduino-Raspberry-Android/dp/B07ZWV1XZ1/)) and simply connect the SDA and SCL pins to the pins 21 and 22 of the ESP32 Arduino board. 
 
 
 ## Firmware
@@ -134,7 +140,7 @@ When entering a token (or receiving it through OpenPAYGO Metrics, Pass, etc.):
 
 ## OpenPAYGO Metrics Data Format
 
-For this example, the following basic OpenPAYGO Metrics data format is used. You can check the (OpenPAYGO Metrics documentation)[https://github.com/openpaygo/metrics/blob/main/Specifications.md] to create a data format that matches your monitoring need. It can support daily averages for several days. 
+For this example, the following basic OpenPAYGO Metrics data format is used. You can check the [OpenPAYGO Metrics documentation](https://github.com/openpaygo/metrics/blob/main/Specifications.md) to create a data format that matches your monitoring need. It can support daily averages for several days. 
 
 **Data Format:**
 ```json
