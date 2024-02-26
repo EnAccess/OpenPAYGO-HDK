@@ -2,6 +2,23 @@
 
 This repository is for the OpenPAYGO HDK (Hardware Development Kit), a ready-to-use implementation of OpenPAYGO technologies (currently Token and Pass) in a dev kit that is both convenient for prototyping and easy to turn into optimized production products. 
 
+<p align="center">
+  <img
+    alt="Project Status"
+    src="https://img.shields.io/badge/Project%20Status-beta-orange"
+  >
+  <a href="https://github.com/EnAccess/OpenPAYGO-HDK/blob/main/LICENSE" target="_blank">
+    <img
+      alt="License"
+      src="https://img.shields.io/github/license/EnAccess/OpenPAYGO-HDK"
+    >
+  </a>
+</p>
+
+## Credits
+
+This open-source project was developped by Solaris Offgrid. Funding for this project for was provided by EnAccess. 
+
 
 ## Table of Content
 
