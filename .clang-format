@@ -1,3 +1,16 @@
 # http://clang.llvm.org/docs/ClangFormatStyleOptions.html
 
-BasedOnStyle: Mozilla
+BasedOnStyle: Google
+Standard: Cpp03
+AllowShortFunctionsOnASingleLine: Empty
+IncludeBlocks: Preserve
+IndentPPDirectives: AfterHash
+DerivePointerAlignment: false
+
+# Always break after if to get accurate coverage
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+
+# custom
+IndentWidth: 4
+ColumnLimit: 160
