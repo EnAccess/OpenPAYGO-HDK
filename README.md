@@ -15,6 +15,10 @@
     alt="Project Status"
     src="https://img.shields.io/badge/Project%20Status-beta-orange"
   >
+  <img
+    alt="GitHub Workflow Status"
+    src="https://img.shields.io/github/actions/workflow/status/EnAccess/OpenPAYGO-HDK/check-generic.yaml"
+  >
   <a href="https://github.com/EnAccess/OpenPAYGO-HDK/blob/main/LICENSE" target="_blank">
     <img
       alt="MIT License"
