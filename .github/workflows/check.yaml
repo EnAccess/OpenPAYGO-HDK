@@ -15,4 +15,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run clang-format lint
-        run: find include/ src/ \( -name '*.[ch]pp' -o -name '*.h' \) | xargs clang-format --verbose --style=file -n --Werror
+        run: find . \( -name '*.[ch]pp' -o -name '*.h' -o -name '*.ino' \) | xargs clang-format --verbose --style=file -n --Werror
