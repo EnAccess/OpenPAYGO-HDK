@@ -31,7 +31,7 @@ void handleMetricsResponseReceived() {
         if (receivedJSON.containsKey("tkl")) {
             JsonArray tokens = receivedJSON["tkl"];
             for (int i = 0; i < tokens.size(); i++) {
-                uint32_t receivedToken = atoi(tokens[0]);
+                uint32_t receivedToken = atoi(tokens[i]);
                 debugPrint("INFO: Received Token in Metrics response: ");
                 debugPrintln(receivedToken);
                 tokenReceived(receivedToken);
